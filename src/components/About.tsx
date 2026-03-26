@@ -77,14 +77,14 @@ export default function About() {
             <div className="grid grid-cols-2 gap-4">
               <img
                 className="w-full rounded-xl shadow-lg object-cover h-64"
-                src="https://images.unsplash.com/photo-1592982537447-6f2a6a0c6c1b?q=80&w=1000&auto=format&fit=crop"
-                alt="Farmer in field"
+                src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=800&q=80"
+                alt="Agriculteur dans un champ"
                 referrerPolicy="no-referrer"
               />
               <img
                 className="w-full rounded-xl shadow-lg object-cover h-64 mt-8"
-                src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?q=80&w=1000&auto=format&fit=crop"
-                alt="Tractor and crops"
+                src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&w=800&q=80"
+                alt="Jeunes pousses dans un champ"
                 referrerPolicy="no-referrer"
               />
             </div>
