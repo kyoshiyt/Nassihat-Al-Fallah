@@ -57,7 +57,16 @@ export default function Contact() {
                   </div>
                   <div className="ml-4">
                     <h4 className="text-lg font-medium text-gray-900">Notre Emplacement</h4>
-                    <p className="mt-1 text-gray-600">MAG 13 Chwiter 813 Ait Ourir Sidi Abdellah Ghiat, Marrakech</p>
+                    <p className="mt-1 text-gray-600">
+                      <a 
+                        href="https://maps.google.com/maps?q=31%C2%B034'35.1%22N+7%C2%B048'59.5%22W" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="hover:text-green-600 transition-colors underline decoration-green-300 underline-offset-2"
+                      >
+                        MAG 13 Chwiter 813 Ait Ourir Sidi Abdellah Ghiat, Marrakech
+                      </a>
+                    </p>
                   </div>
                 </div>
 
@@ -87,19 +96,18 @@ export default function Contact() {
                 </div>
               </div>
 
-              {/* Map Placeholder */}
-              <div className="mt-10 bg-gray-200 rounded-xl h-48 w-full flex items-center justify-center overflow-hidden relative">
-                <img
-                  src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=800&auto=format&fit=crop"
-                  alt="Map Location"
-                  className="w-full h-full object-cover opacity-50 grayscale"
-                  referrerPolicy="no-referrer"
+              {/* Map Embed */}
+              <div className="mt-10 rounded-xl w-full overflow-hidden relative shadow-sm border border-gray-200" style={{ height: '300px' }}>
+                <iframe 
+                  width="100%" 
+                  height="100%" 
+                  frameBorder="0" 
+                  scrolling="no" 
+                  marginHeight={0} 
+                  marginWidth={0} 
+                  src="https://maps.google.com/maps?width=600&height=400&hl=en&q=31%C2%B034'35.1%22N%207%C2%B048'59.5%22W&t=k&z=17&ie=UTF8&iwloc=&output=embed"
+                  title="Google Maps Location"
                 />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="bg-white/90 px-4 py-2 rounded-lg font-medium text-gray-800 shadow-sm">
-                    Marrakech, Maroc
-                  </span>
-                </div>
               </div>
             </div>
           </motion.div>
